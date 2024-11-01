@@ -87,8 +87,16 @@ b, strong {
 }
 /* header */
 header .navbar-brand img {
-    max-height: 50px;
+    max-height: 100px;
 }
+
+@media (max-width: 768px) { /* You can adjust 768px to your breakpoint */
+    header .navbar-brand img {
+        max-height: 50px;
+    }
+}
+
+
 .navbar .navbar-nav .nav-link {
     font-size: 17px;
     letter-spacing: .5px;
