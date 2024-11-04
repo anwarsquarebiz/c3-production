@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Management</h1>
+        
+        <form id="jobForm">
+            <input type="text" id="jobTitle" placeholder="Job Title*" required />
+            <input type="text" id="jobLocation" placeholder="Location*" required />
+            <input type="text" id="jobSalary" placeholder="Salary*" required />
+            <input type="text" id="jobExperience" placeholder="Experience*" required />
+            <button type="submit">Add Job</button>
+        </form>
+
+        <div id="jobList"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -3780,3 +3780,11 @@ function initMap() {
       document.getElementById('headersection').innerHTML = data;
     })
     .catch(error => console.error('Error fetching headersection:', error));
+
+// Fetch the content of headersection.html and insert it into the div
+fetch('demo-startup-footer.html')
+.then(response => response.text())
+.then(data => {
+  document.getElementById('footersection').innerHTML = data;
+})
+.catch(error => console.error('Error fetching footersection:', error));
